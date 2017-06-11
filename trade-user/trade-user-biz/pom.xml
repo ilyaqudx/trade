@@ -1,17 +1,69 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>freedom</groupId>
-    <artifactId>trade-user</artifactId>
-    <version>0.0.1</version>
-  </parent>
-  <artifactId>trade-user-biz</artifactId>
-  
-  <dependencies>
-  	<dependency>
-  		<groupId>freedom</groupId>
-  		<artifactId>trade-user-api</artifactId>
-  		<version>0.0.1</version>
-  	</dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>freedom</groupId>
+		<artifactId>trade-user</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>trade-user-biz</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>freedom</groupId>
+			<artifactId>trade-user-api</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		
+		<!-- 内嵌式Tomcat -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>8.0.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-logging-juli</artifactId>
+			<version>8.0.11</version>
+		</dependency>
+		<!-- 内嵌式Tomcat -->
+		<!-- jboos resteasy -->
+	<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxrs</artifactId>
+			<version>3.0.7.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-client</artifactId>
+			<version>3.0.7.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-netty</artifactId>
+			<version>3.0.7.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jdk-http</artifactId>
+			<version>3.0.7.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jackson-provider</artifactId>
+			<version>3.0.7.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxb-provider</artifactId>
+			<version>3.0.7.Final</version>
+		</dependency>
+	<!-- jboos resteasy -->
+	</dependencies>
 </project>
